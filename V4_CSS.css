@@ -1,0 +1,1151 @@
+/*
+===================================================
+------------------ PAGE PARAMETERS ---------------- 
+===================================================
+*/
+* {
+    margin          : 0;
+    padding         : 0;
+}
+
+body{
+    min-height       : 100vh;
+    width            : 100vw;
+    height           : 100vh;
+    background-color : rgb(0, 0, 0);
+    color            : blanchedalmond;
+    align-content    : center;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {width : 15px;}
+::-webkit-scrollbar-track {background : #1e1e1e; }
+::-webkit-scrollbar-thumb {
+    background-color : #3c3a3a; 
+    border-radius    : 10px; 
+    border           : 3px solid #1e1e1e; 
+}
+::-webkit-scrollbar-thumb:hover {background-color : #777;}
+
+.cover_filter {
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    width            : 100%;
+    height           : 100%;
+    background-color : rgba(0, 0, 0, 0.6); 
+    z-index          : 0;
+}
+
+
+/*
+===================================================
+--------------------- HEADER ---------------------- 
+===================================================
+*/
+.HEADER {
+    width            : 100%; 
+    height           : 6vh; 
+    position         : fixed; 
+    top              : 0;
+    z-index          : 10; 
+    transition       : background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transparent {
+    background-color : rgba(0, 0, 0, 0); 
+    box-shadow       : none; 
+}
+
+.colored {
+    background-color : rgba(20, 20, 20, 0.904); 
+    box-shadow       : 0px 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.container_header {
+    display          : flex; 
+    justify-content  : space-around;  
+    align-items      : center; 
+    height           : 100%; 
+}
+
+.p0 {
+    font-size   : clamp(0.8rem, 2.5vw, 2rem); 
+    font-family : 'Cambria', sans-serif; 
+    color       : #ffffff;  
+    cursor      : pointer; 
+    transition  : color 0.3s ease; 
+}
+
+.p0:hover {
+    color: #10aa89; 
+}
+
+
+/*
+===================================================
+--------------------- SECTION 1 ------------------- 
+===================================================
+*/
+.TOP_PAGE {
+    width            : 100vw;
+    height           : 100vh;
+    position         : relative;
+    background-color : transparent;
+    overflow-x       : hidden;
+}
+
+.p1 {
+    font-size   : clamp(1.5rem, 2.5vw, 3rem); 
+    font-family : 'Bell MT', sans-serif;  
+    color       : #ffffff; 
+    position    : absolute; 
+    width       : 70%; 
+    z-index     : 1;
+    top         : 60%; 
+    left        : 15%; 
+    text-align  : justify;
+    text-shadow : 2px 4px 8px rgba(0, 0, 0, 0.7);
+    transform   : translateY(-50%);
+}
+
+.h1 {
+    font-size               : clamp(3rem, 5vw, 5rem); 
+    font-family             : 'Bell MT', sans-serif; 
+    font-weight             : bolder; 
+    color                   : transparent; 
+    background              : linear-gradient(45deg, #ba9acf, #c5f9eb); 
+    -webkit-background-clip : text; 
+    z-index                 : 1;
+    position                : absolute;
+    top                     : 30%; 
+    left                    : 5%; 
+    white-space             : nowrap;
+}
+
+#video {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    z-index    : -2; 
+    width      : 100%;
+    height     : 100%;
+    object-fit : cover;
+}
+
+/*
+===================================================
+--------------------- SECTION 2 ------------------- 
+===================================================
+*/
+.Profile_Overview {
+    width            : 100vw;
+    height           : 110vh;
+    position         : relative;
+    overflow-x       : hidden;
+    background-color :rgb(0, 0, 0);
+}
+
+.Personal {
+    font-size        : 3rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 5%; 
+    left             : 5%; 
+    color            : white;
+    z-index: 3;
+}
+
+.Experience {
+    color: #08b6b6; 
+    background-color: transparent;
+}
+
+.p1 {
+    font-size   : clamp(1.5rem, 2.5vw, 3rem); 
+    font-family : 'Bell MT', sans-serif;  
+    color       : #ffffff; 
+    position    : absolute; 
+    width       : 70%; 
+    z-index     : 1;
+    top         : 60%; 
+    left        : 15%; 
+    text-align  : justify;
+    text-shadow : 2px 4px 8px rgba(0, 0, 0, 0.7);
+    transform   : translateY(-50%);
+}
+
+#video2 {
+    position    : absolute;
+    top         : 30%;
+    left        : 50%;
+    z-index     : 1; 
+    width       : 60%;
+    height      : 60%;
+    object-fit  : cover;
+}
+
+.window {
+    position      : relative;
+    top           : 24%;
+    left          : 5%;
+    width         : 52%;
+    height        : 65%;
+    background    : linear-gradient(90deg, #1a161c 5%, #13101f 70%, #151a29);
+    padding       : 30px;
+    overflow-x    : hidden;
+    z-index       : 2;
+    border-radius : 20px;
+    box-shadow    : 0 10px 30px rgba(0, 0, 0, 0.8);
+    animation     : fadeIn 1s ease-out, glowEffect 3s infinite alternate;
+}
+
+.timeline {
+    position     : relative;
+    left         : 1%;
+    width        : 100%;
+    padding-left : 17px;
+    border-left  : 4px solid #2a1bb3;
+}
+
+.event {
+    display             : flex;
+    align-items         : center;
+    margin-bottom       : 60px;
+    position            : relative;
+    animation           : slideIn 1s ease-out;
+    animation-delay     : calc(var(--delay) * 0.2s);
+    animation-fill-mode : both;
+}
+
+.point {
+    position         : absolute;
+    left             : -29px;
+    top              : 46%;
+    width            : 20px;
+    height           : 20px;
+    background-color : #1b58b3;
+    border-radius    : 50%;
+    box-shadow       : 0 0 15px rgba(27, 62, 179, 0.8);
+    animation        : pulse 2s infinite;
+}
+
+.date {
+    font-size    : 1.8rem;
+    font-weight  : bold;
+    color        : #009de6;
+    margin-right : 40px;
+    margin-left  : 30px;
+    flex-shrink  : 0;
+    animation    : fadeIn 1s ease-out;
+}
+
+.content {
+    width            : 60%;
+    background-color : transparent;
+    border-radius    : 10px;
+    padding          : 20px 30px;
+    max-width        : 600px;
+    box-shadow       : 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform        : scale(1);
+    transition       : transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-list {
+    padding-left    : 20px;
+    list-style-type : disc;  
+    color           : white;    
+    font-size       : clamp(0.8rem, 1.2rem, 2rem); /* Texte adaptable */
+    font-family     : 'constentia', sans-serif;  
+}
+
+.project-list ul {
+    list-style-type: none; 
+    margin-top: 25px;
+
+}
+
+.project-list li {
+    margin-bottom: 25px;    
+}
+
+.project-list p {
+    margin: 5px 0 0 20px;
+}
+
+.custom-list li::before {
+    content: "➡"; 
+    color: gold;
+    margin-right: 10px;
+}
+
+.event:hover .content {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(42, 27, 179, 0.8);
+}
+
+.title {
+    font-size     : 1.6rem;
+    margin-bottom : 30px;
+    font-weight   : bold;
+    color         : wheat;
+}
+
+.event:nth-child(1) {
+    --delay: 1;
+}
+.event:nth-child(2) {
+    --delay: 2;
+}
+.event:nth-child(3) {
+    --delay: 3;
+}
+.event:nth-child(4) {
+    --delay: 4;
+}
+.event:nth-child(5) {
+    --delay: 5;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 10px 30px #1c1529, 
+                    0 0 10px rgba(193, 99, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 10px 40px #1b1529, 
+                    0 0 15px rgba(122, 99, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 10px 50px rgb(0, 0, 0), 
+                    0 0 20px rgba(99, 161, 255, 0.6);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/*
+===================================================
+--------------------- SECTION 3 ------------------- 
+===================================================
+*/
+.Personal_Projects {
+    width            : 100vw;
+    height           : 110vh;
+    position         : relative;
+    overflow-x       : hidden;
+    background-color :rgb(0, 0, 0);
+}
+
+.Personal {
+    font-size   : 3rem;
+    font-family : 'cambria', sans-serif;
+    font-weight : bold;
+    position    : absolute; 
+    top         : 10%; 
+    left        : 5%; 
+    color       : white;
+}
+
+.Projects {
+    color: #1bb385; 
+}
+
+/*
+================ CARDS ================
+*/
+.container {
+    position         : relative;
+    width            : 95%;
+    height           : 70%;
+    top              : 28%;
+    left             : 5%;
+    display          : flex;
+    gap              : 50px;
+    flex-wrap        : wrap;
+    background-color : transparent;
+
+}
+
+.container .card {
+    position         : relative;
+    translate        : (-50%,-50%);
+    width            : 400px;
+    height           : 250px;
+    min-width        : 20%;
+    background-color : #252525;
+    border-radius    : 20px;
+    overflow         : hidden;
+    transition       : transform 0.3s ease; 
+}
+
+.container .card::before {
+    content    : '';
+    position   : absolute;
+    top        : var(--y);
+    left       : var(--x);
+    background : radial-gradient(var(--clr),transparent,transparent);
+    width      : 700px;
+    height     : 700px;  
+    opacity    : 0;  
+    transform  : translate(-50%,-50%);
+    transition : 0.5s, top 0s, left 0s;
+}
+
+.container .card:hover::before {
+    opacity    : 1; 
+}
+
+.container .card:hover {
+    transform: scale(1.05); 
+}
+
+.container .card::after {
+    content       : '';
+    position      : absolute;
+    inset         : 2px;
+    border-radius : 18px;
+    background    : rgb(45, 45, 45,0.75);
+}
+
+.card-content {
+    font-size   : 1rem; 
+    font-family : 'Bell MT', sans-serif;  
+    color       : #ffffff; 
+    position    : absolute; 
+    width       : 70%; 
+    z-index     : 1;
+    text-align  : justify;
+    text-shadow : 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.card-content {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : flex-start;
+    height          : 95%;
+    width           : 100%;
+}
+
+.card-title {
+    font-size     : 2.7rem; 
+    font-family   : 'Bell MT', sans-serif; 
+    font-weight   : bolder; 
+    color         : #ffffff; 
+    position      : absolute; 
+    color         : wheat; 
+    z-index       : 1;
+    top           : 1rem; 
+    left          : 1.5rem; 
+    white-space   : nowrap;
+}
+
+.card-description {
+    line-height : 1.4;
+    font-size   : 1.4rem; 
+    font-family : 'Bell MT', sans-serif;  
+    color       : white; 
+    position    : absolute; 
+    width       : 80%; 
+    z-index     : 1;
+    top         : 6rem; 
+    left        : 3rem; 
+    text-align  : justify;
+    text-shadow : 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/*
+===================================================
+--------------------- SECTION 4 ------------------- 
+===================================================
+*/
+.Personal_programmation {
+    width            : 100vw;
+    height           : 120vh;
+    position         : relative;
+    overflow-x       : hidden;
+    background-color : transparent;
+}
+
+.Programmation {
+    font-size        : 3rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 4%; 
+    left             : 5%; 
+    color            : white;
+}
+
+.Knowledge {
+    color: #dba329; 
+    background-color: transparent;
+}
+
+.Languages {
+    font-size        : 3.5rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 30%; 
+    text-align       : right;
+    max-width        : 40%;
+    right            : 10%;
+    color            : #4fc7bd
+
+}
+
+.Softwares {
+    font-size        : 3.5rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 75%;
+    text-align: left; 
+    left             : 4%;
+    max-width: 40%; 
+    color            : rgb(235, 153, 121);
+}
+
+.scrolling-banner {
+    position      : absolute;
+    top           : 30%;
+    left          : 0%;
+    overflow      : hidden;
+    z-index       : -2 ;
+    width         : 30%;
+    height        : 3.5rem;
+    background    : linear-gradient(90deg, #151138, #172157);
+    border-top    : 4px solid #102f95;
+    border-bottom : 4px solid #102f95;
+    display       : flex;
+    align-items   : center;
+    box-shadow    : 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    display     : flex;
+    width       : 80%;
+    animation   : scroll-left 15s linear infinite;
+    white-space : nowrap;
+}
+
+.banner-content p {
+    font-size   : 1.5rem;
+    color       : #ffffff;
+    font-weight : bold;
+    padding     : 0 2rem;
+}
+
+.scrolling-banner:hover .banner-content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-140%);
+    }
+}
+
+.scrolling-banner2 {
+    position      : absolute;
+    top           : 77%;
+    left          : 70%;
+    overflow      : hidden;
+    z-index       : -2;
+    width         : 30%;
+    height        : 3.5rem;
+    background    : linear-gradient(90deg, #151138, #172157);
+    background    : linear-gradient(90deg, #501c1c, #2b0909);
+
+    border-top    : 4px solid #102f95;
+    border-bottom : 4px solid #102f95;
+    border-top    : 4px solid #921212;
+    border-bottom : 4px solid #921212;
+    display       : flex;
+    align-items   : center;
+    box-shadow    : 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content2 {
+    display     : flex;
+    width       : 80%;
+    animation   : scroll-right 10s linear infinite;
+    white-space : nowrap;
+}
+
+.banner-content2 p {
+    font-size   : 1.5rem;
+    color       : #ffffff;
+    font-weight : bold;
+    padding     : 0 2rem;
+}
+
+.scrolling-banner2:hover .banner-content2 {
+    animation-play-state : paused;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.card2 {
+    margin           : 0 auto;
+    padding          : 2rem;
+    width            : 25%;
+    height           : 25%;
+    min-width        : 350px;
+    background-color : #1c1529;
+    text-align       : center;
+    border-radius    : 10px;
+    position         : relative;
+    top              : 20%;
+    left             : -11rem;
+    translate        : (-50%,-50%);   
+}
+
+@property --angle{
+    syntax        : "<angle>";
+    initial-value : 0deg;
+    inherits      : false;
+}
+
+.card2::after, .card2::before{
+    content          : '';
+    position         : absolute;
+    height           : 100%;
+    width            : 100%;
+    background-image : conic-gradient(from var(--angle),rgb(180, 121, 62),rgb(164, 6, 6),rgb(190, 167, 16),rgb(167, 98, 18),rgb(197, 185, 15));
+    background-image : conic-gradient(from var(--angle),rgb(24, 180, 149),rgb(27, 65, 121),rgb(20, 208, 145),rgb(18, 137, 167),rgb(15, 197, 149));
+    top              : 50%;
+    left             : 50%;
+    translate        : -50% -50%;
+    z-index          : -1;
+    padding          : 10px;
+    border-radius    : 10px;
+    animation        : 3s spin linear infinite;
+}
+
+.card2::before{
+    filter : blur(1.5rem);
+    opacity: 0.6;
+}
+
+
+.card2_bis {
+    margin           : 0 auto;
+    padding          : 2rem;
+    width            : 25%;
+    height           : 25%;
+    min-width        : 380px;
+    background-color : #241f1d;
+    text-align       : center;
+    border-radius    : 10px;
+    position         : relative;
+    top              : 33%;
+    left             : 6.5rem;
+    translate        : (-50%,-50%);   
+}
+
+@property --angle{
+    syntax        : "<angle>";
+    initial-value : 0deg;
+    inherits      : false;
+}
+
+.card2_bis::after, .card2_bis::before{
+    content          : '';
+    position         : absolute;
+    height           : 100%;
+    width            : 100%;
+    background-image : conic-gradient(from var(--angle),rgb(180, 121, 62),rgb(164, 6, 6),rgb(190, 167, 16),rgb(167, 98, 18),rgb(197, 185, 15));
+    background-image : conic-gradient(from var(--angle),rgb(24, 180, 149),rgb(27, 65, 121),rgb(20, 208, 145),rgb(18, 137, 167),rgb(15, 197, 149));
+    background-image : conic-gradient(from var(--angle),rgb(180, 121, 62),rgba(164, 6, 6, 0.705),rgba(136, 113, 36, 0.808),rgb(167, 98, 18),rgba(197, 124, 15, 0.781));
+
+
+    background-image: conic-gradient(from var(--angle), rgba(180, 121, 62, 0.9), 
+    rgba(164, 6, 6, 0.926), 
+    rgba(136, 113, 36, 0.7), 
+    rgba(167, 40, 18, 0.8), 
+    rgba(197, 124, 15, 0.75), 
+    rgba(180, 121, 62, 0.9)
+);
+
+    top              : 50%;
+    left             : 50%;
+    translate        : -50% -50%;
+    z-index          : -1;
+    padding          : 10px;
+    border-radius    : 10px;
+    animation        : 3s spin linear infinite;
+}
+
+.card2_bis::before{
+    filter : blur(1.5rem);
+    opacity: 0.6;
+}
+
+.languages_card {
+    position    : relative;
+    font-size   : 2rem;
+    font-family : 'gorgia', sans-serif;
+    font-weight : bold;
+    color       : #7dbbe4;
+}
+
+.languages_card2 {
+    position    : relative;
+    font-size   : 2rem;
+    font-family : 'gorgia', sans-serif;
+    font-weight : bold;
+    color:#e4c07d;
+}
+
+@keyframes spin {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+    
+}
+
+.programming {
+    display         : flex;
+    flex-direction  : column;
+    gap             : 1.5rem;
+    position: relative;
+    top: 12%;
+    left: 22%;
+}
+
+.skill {
+    display         : flex;
+    left            : -5%;
+    justify-content : space-between;
+    position        : relative; 
+    
+}
+
+.skill p {
+    font-size       : 1.3rem;
+    font-family     : 'gorgia', sans-serif;
+    font-weight     : bold;
+    margin          : 0;
+    z-index         : 2; 
+}
+
+.skill-points {
+    display         : flex;
+    gap             : 0.7rem;
+    position        : relative;
+    left            : -20%;
+    z-index         : 1; 
+    text-align: center;
+}
+
+.point {
+    width            : 1rem;
+    height           : 1rem;
+    background-color : #444;
+    border-radius    : 50%;
+    box-shadow       : 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation        : none;
+    top: 15%;
+    position         : relative;
+}
+
+.point.filled {
+    background-color : #1fcc59; /* Couleur pour les points "remplis" */
+    animation        : pulse 1.5s infinite;
+    position         : relative;
+}
+
+.point.filled2 {
+    background-color : #e96528; /* Couleur pour les points "remplis" */
+    animation        : pulse 1.5s infinite;
+    position         : relative;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/*
+===================================================
+--------------------- SECTION 5 ------------------- 
+===================================================
+*/
+.Contact_me {
+    width            : 100vw;
+    height           : 100vh;
+    position         : relative;
+    overflow-x       : hidden;
+    background-color : transparent;
+}
+
+.Contact {
+    font-size        : 3rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 5%; 
+    left             : 5%; 
+    color            : white;
+    z-index: 3;
+}
+
+.Me {
+    color: #0830b6; 
+    background-color: transparent;
+}
+
+#video5 {
+    position    : absolute;
+    top         : 0%;
+    left        : 0%;
+    width       : 100%;
+    height      : 100%;
+    object-fit  : cover;
+    z-index     : -2;
+}
+
+@property --angle{
+    syntax        : "<angle>";
+    initial-value : 0deg;
+    inherits      : false;
+}
+
+
+
+.card3::after, .card3::before{
+    content          : '';
+    position         : absolute;
+    height           : 65%;
+    top              : 55%;
+    left             : 50%;
+    translate        : (-50%,-50%);
+    width            : 35%;
+    background-image : conic-gradient(from var(--angle),rgba(132, 21, 21, 0.527),rgba(24, 20, 109, 0.527),rgba(33, 39, 146, 0.505),rgba(165, 40, 159, 0.473),rgba(177, 18, 18, 0.434));
+    translate        : -50% -50%;
+    z-index          : -1;
+    padding          : 10px;
+    border-radius    : 10px;
+    animation        : 6s spin linear infinite;
+    min-width       : 40%;
+
+}
+
+.card3::before{
+    filter : blur(3rem);
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    from{
+        --angle:-0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+    
+}
+
+.container5 {
+    min-height      : 100vh;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background      : transparent;
+}
+
+.container5 form {
+    position         : absolute;
+    top              : 17%;
+    translate        : (-50%,-50%);
+    width            : 50%;
+    height           : 75%;
+    display          : flex;
+    justify-content  : center;
+    border-radius    : 15px;
+    background-color : #5040406d;
+    backdrop-filter  : blur(250px);
+    flex-wrap        : wrap;
+    min-width        : 40%;
+    min-height       : 80%;
+    z-index          : 5;
+}
+
+.container5 form h5 {
+    color       : #e7c569;
+    font-weight : 600;
+    font-size   : 5vh;
+    margin-top  : 20px;    
+    width       : 500px;
+    text-align  : center;
+    margin-bottom: 20px;
+}
+
+.container5 form input {
+    min-width     : 40%;
+    width         : 10%;
+    max-width     : 80%;
+    height        : 45px;
+    padding-left  : 10px;
+    outline       : none;
+    border        : none;
+    font-size     : 25px;
+    margin-bottom : 20px;
+    color         : #420e35;
+}
+
+
+.container5 form input::placeholder {
+    color       : #672091;
+    font-size   : 3.2vh;
+    font-family : 'cambria', sans-serif;
+    font-weight : bold;
+}
+
+.container5 form #lastname,
+.container5 form #mobile {
+    margin-left: 20px;
+}
+
+.container5 form h4 {
+    color       : #e7c569;
+    font-weight : 500;
+    font-size   : 4vh;
+    font-family : 'cambria', sans-serif;
+    font-weight : bold;
+    width       : 600px;
+    margin-top  : 20px;
+}
+
+
+.container5 form h44 {
+    color       : #05c45b;
+    font-weight : 400;
+    font-size   : 3vh;
+    font-family : 'cambria', sans-serif;
+    font-weight : bold;
+    width       : 800px;
+    margin-top  : 20px;
+    text-align: center;
+}
+
+.container5 form textarea {
+    background    : none;
+    border        : none;
+    border-bottom : 2px solid #ffffff;
+    color         : #7fd6ff;
+    font-weight   : 20px;
+    font-size     : 20px;
+    padding       : 10px;
+    outline       : none;
+    min-width     : 85%;
+    min-height    : 10%;
+    
+}
+
+.container5 form h4 {
+    font-size: 20px;
+}
+
+.container5 form #button {
+    background    : #ffffff;
+    border        : none;
+    border-radius : 5px;
+    color         : #000;
+    font-weight   : 600;
+    font-size     : 24px;
+    padding       : 0;
+    width         : 200px;
+    margin-top    : 40px;
+    margin-bottom : 30px;
+    transition    : 0.3s;
+    min-width: 2vw;
+    min-height: 5%;
+}
+
+.container5 form #button:hover {
+    background : #b6811f;
+    color      : #ffffff;
+    transform  : 0.5s ease in-out;
+}
+
+
+/*
+===================================================
+--------------------- SECTION 6 ------------------- 
+===================================================
+*/
+.About_me {
+    width            : 100vw;
+    height           : 100vh;
+    position         : relative;
+    overflow-x       : hidden;
+    background-color : transparent;
+    overflow         : hidden;
+
+}
+
+.About {
+    font-size        : 3rem;
+    font-family      : 'cambria', sans-serif;
+    font-weight      : bold;
+    position         : absolute; 
+    background-color : transparent;
+    top              : 10%; 
+    left             : 5%; 
+    color            : white;
+    z-index: 3;
+}
+
+.Me2 {
+    color: #bc1f56; 
+    background-color: transparent;
+}
+
+#image {
+    /*
+    width: 28%;
+    height: 48%;
+    min-width: 150px;
+    min-height: 150px;
+    */
+    width: 18%;
+    height: 48%;
+    min-width: 200px;
+    min-height: 150px;
+    object-fit: contain;   /* ✅ garde l'image entière */
+    object-position: center;
+    border-radius    : 5%;
+    align-items      : center;
+    border           : 1px solid #000;
+    background-color : transparent;
+    object-fit       : cover;
+    position         : relative;
+    top              : 35%;
+    left             : 10%;
+}
+
+#video6 {
+    position    : absolute;
+    top         : 0%;
+    left        : 0%;
+    width       : 98%;
+    height      : 98%;
+    object-fit  : cover;
+}
+
+.container6 {
+    width           : 45vw;
+    height          : 30vh;
+    min-height: 35%;
+    position        : absolute;
+    top             : 40%;
+    left            : 45%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background      : transparent;
+
+}
+
+.container6 form {
+    position         : relative;
+    top              : 0%;
+    left             : 0%;
+    width            : 100%;
+    height           : 100%;
+    display          : flex;
+    justify-content  : center;
+    border-radius    : 25px;
+    background-color : #5040406d;
+    backdrop-filter  : blur(5px);
+    flex-wrap        : wrap;
+    z-index          : 5;
+}
+
+
+.container6 form h6 {
+    color       : #4b96c9;
+    font-weight : 600;
+    font-size   : 5vh;
+    margin-top  : 20px;    
+    width       : 500px;
+    text-align  : center;
+
+}
+
+.container6 form h7 {
+    color       : #98d7fc;
+    font-weight : 500;
+    font-size   : 3.2vh;
+    font-family : 'cambria', sans-serif;
+    width       : 90%;
+    text-align  : justify;
+    top         : 35%;
+    word-wrap   : break-word;
+    overflow-wrap: break-word;
+}
+
