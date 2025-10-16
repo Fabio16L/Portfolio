@@ -921,7 +921,8 @@ body{
     position         : absolute;
     top              : 17%;
     translate        : (-50%,-50%);
-    width            : 50%;
+    width            : 42%;
+    max-width        : 42%;
     height           : 75%;
     display          : flex;
     justify-content  : center;
@@ -1148,4 +1149,5 @@ body{
     word-wrap   : break-word;
     overflow-wrap: break-word;
 }
+
 
