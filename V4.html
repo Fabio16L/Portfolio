@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta    name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Mr.LEBOUCHER</title>
+    <link rel = "stylesheet" href = "V4_CSS.css">
+</head>
+
+
+
+<body>
+
+
+    <!----------------------------------------------------->
+    <!----------------------- HEADER ---------------------->
+    <!----------------------------------------------------->
+    <section class = "HEADER" id = "section0">
+        <div class = "container_header">
+            <a href = "#section3" class = "p0">Projects</a>
+            <a href = "#section5" class = "p0">Contact me</a>
+            <a href = "#section6" class = "p0">About me</a>
+        </div>
+    </section>
+
+    <script>
+        
+        const header = document.querySelector('.HEADER');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.remove('transparent');
+                header.classList.add('colored');
+            } else {
+                header.classList.remove('colored');
+                header.classList.add('transparent');
+            }
+        });
+    </script>
+
+    <!----------------------------------------------------->
+    <!--------------------- MAIN PAGE --------------------->
+    <!----------------------------------------------------->
+
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 1 --------------------->
+    <!----------------------------------------------------->
+    <section class = "TOP_PAGE" id = "section1">
+        <h1 class  = "h1">I'm Fabio Leboucher</h1>
+        <p1 class  = "p1">I am an aeronautic student committed to improving my skills across multiple domains. Though not naturally gifted, I am phenomally determined to succeed. </p1>
+        <div class = "cover_filter"></div>
+        <video id  = "video" autoplay loop muted>
+            <source src = "light.mp4" type = "video/mp4">
+        </video>
+    </section>
+
+
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 2 --------------------->
+    <!----------------------------------------------------->
+    <section class = "Profile_Overview"    id = "section2">
+
+        <h2 class     = "Personal">Personal <span class = "Experience">Experience</span></h2>
+        <div class = "cover_filter"></div>
+        <video id  = "video2" autoplay loop muted>
+            <source src = "lentillles.mp4" type = "video/mp4">
+        </video>
+        <div class="window">
+            <div class="timeline">
+                <div class="event">
+                    <div class="date">2025 - 2026</div>
+                    <div class="point"></div>
+                    <div class="content">
+                        <h3 class="title">Internship at Hitachi Rail (4 Month)</h3>
+                        <ul class="project-list">
+                            <li>Implementation of recursive parsing and initialization file for metro odometry replay
+                                <ul class="custom-list">
+                                    <li>Variable traceability, automatic classification, and interactive visualization</li>
+                                    <li>Parsing of C++ code implemented with Python</li>
+                                </ul>
+                            </li>
+                            <li>Development of a graphical interface for analysis and simulation of field test data</li>
+                            <li>On-site observation of night-time tests in Brussels
+                                <ul class="custom-list">
+                                    <li>Observation of Control Center operations, regulation, and CBTC installation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="event">
+                    <div class="date">2024 - 2025</div>
+                    <div class="point"></div>
+                    <div class="content">
+                        <h3 class="title">Study Abroad Semester</h3>
+                        <ul class = "project-list">
+                            <li>Introduction to cyber security and web development
+                                <ul class="custom-list">
+                                    <li>Denial of Service Attack (Overload Test)</li>
+                                    <li>Portfolio development in HTML/CSS</li>
+                                </ul>
+                            </li>
+                            <li>Manipulation on an ARM microcontroller
+                                <ul class="custom-list">
+                                    <li>Interrupts, system exceptions and timer management</li>
+                                    <li>SPI, UART and I2C communication</li>
+                                    <li>DAC and ADC converters</li>
+                                </ul>
+                            <li>Improving skills in Excel, including the development of VBA macros and automation techniques</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "event">
+                    <div class = "date">2023 - 2024</div>
+                    <div class = "point"></div>
+                    <div class = "content">
+                        <h3 class = "title">Internship at Compagnie Des Signaux (2 Month)</h3>   
+                        <ul class = "project-list">
+                            <li>Implementation and tests of protocols with a graphical interface to optimize EEPROM memory testing.
+                                <ul class="custom-list">
+                                    <li>Use of SPI bus, RS - 232 link and USBFlasher</li>
+                                    <li>Bit padding and position testing. </li>
+                                </ul>
+                            </li>
+                            <li>Series of tests for a power supply board</li>
+                            <ul class="custom-list">
+                                <li>Visual inspections, structural and functional tests</li>
+                                <li>Ensuring compatibility for python programms</li>
+                            </ul>
+                            <li>Component benchmarking, obsolescence management with tracking of delivery times</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "event">
+                    <div class = "date">2020 - 2025</div>
+                    <div class = "point"></div>
+                    <div class = "content">
+                        <h3 class = "title">IPSA engineering school</h3>   
+                        <ul class = "project-list">
+                            <li> 4th year of IPSA engineering school, Ivry sur Seine (94200)
+                                <ul class="custom-list">
+                                    <li>Telecomunication specialisation</li>
+                                    <li>Preparatory cycle 2020 – 2023</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="date">2017 - 2020</div>
+                    <div class="point"></div>
+                    <div class="content">
+                        <h3 class="title">Training</h3>
+                        <ul class="project-list">         
+                            <li>Scientific Baccalaureate, Jules Vernes Limours (91470)
+                                <ul class="custom-list">
+                                    <li>Physics and Chemistry 2017 - 2020</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+       
+    </section>
+
+    
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 3 --------------------->
+    <!----------------------------------------------------->
+    <section class = "Personal_Projects"    id = "section3">
+        <h2 class     = "Personal">Personal <span class = "Projects">Projects</span></h2>
+       
+        <div class="container">
+            <div class="card" style="--clr:rgb(219, 14, 14);">
+                <div class="card-content">
+                    <h3 class="card-title">IHM</h3>
+                    <p class="card-description">Development of a graphical interface aimed at optimizing the EEPROM memory testing process</p>
+                </div>
+            </div>
+            <div class="card" style="--clr:rgb(27, 222, 163);">
+                <div class="card-content">
+                    <h3 class="card-title">Python game</h3>
+                    <p class="card-description">Realisation of a Python game involving win and loss conditions</p>
+                </div>
+            </div>
+            <div class="card" style="--clr:rgb(37, 21, 159);">
+                <div class="card-content">
+                    <h3 class="card-title">DDOS attack</h3>
+                    <p class="card-description">Simulation of a local DDOS attack with personal terminal and python programm</p>
+                </div>
+            </div>
+            <div class="card" style="--clr:rgb(176, 51, 207);">
+                <div class="card-content">
+                    <h3 class="card-title">Arduino project</h3>
+                    <p class="card-description">Creating a digicod of a 4 possibilities with leds and a 16 digits display to indicate successive try or failure</p>
+                </div>
+            </div>
+            <div class="card" style="--clr:rgb(230, 36, 146);">
+                <div class="card-content">
+                    <h3 class="card-title">Recursive Parsing</h3>
+                    <p class="card-description">Unit test implemented with a parsing including automatic classification and initialization of variables</p>
+                </div>
+            </div>
+            <div class="card" style="--clr:rgb(150, 223, 81);">
+                <div class="card-content">
+                    <h3 class="card-title">Another one ?</h3>
+                    <p class="card-description">Help me to develop our next project together ?</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            let cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                 card.onmousemove = function(e){
+                    let rect = card.getBoundingClientRect();
+                    let x = e.clientX - rect.left;
+                    let y = e.clientY - rect.top;
+
+                    card.style.setProperty('--x', x + 'px');
+                    card.style.setProperty('--y', y + 'px');
+                 }
+            });
+        </script>
+    </section>
+
+    
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 4 --------------------->
+    <!----------------------------------------------------->
+    <section class = "Personal_programmation"    id = "section4">
+
+        
+
+        <div class = "card2">
+            <div class = "languages_card">Degree of mastery</div>
+            <div class="programming">
+                <div class="skill">
+                    <p>Python 3.8</p>
+                    <div class="skill-points">
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <p>C/C++</p>
+                    <div class="skill-points">
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>VHDL</p>
+                    <div class="skill-points">
+                        <span class="point filled"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>HTML/CSS</p>
+                    <div class="skill-points">
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point filled"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class = "card2_bis">
+            <div class = "languages_card2">Degree of mastery</div>
+            <div class="programming">
+                <div class="skill">
+                    <p>MATLAB</p>
+                    <div class="skill-points">
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <p>QUARTUS</p>
+                    <div class="skill-points">
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>CATIA R19</p>
+                    <div class="skill-points">
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>Visual Studio</p>
+                    <div class="skill-points">
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point filled2"></span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class     = "Programmation">Programmation <span class = "Knowledge">Knowledge</span></h2>
+        <h2 class     = "Languages">Languages</h2>
+        <h2 class     = "Softwares">Softwares</span></h2>
+
+        <div class="scrolling-banner">
+            <div class="banner-content">
+                <p>Python 3.8</p>
+                <p>C/C++</p>
+                <p>VHDL</p>
+                <p>HTML/CSS</p>
+                <p>Python 3.8</p>
+                <p>C/C++</p>
+                <p>VHDL</p>
+                <p>HTML/CSS</p>
+            </div>
+        </div>
+
+        <div class="scrolling-banner2">
+            <div class="banner-content2">
+                <p>MATLAB</p>
+                <p>QUARTUS</p>
+                <p>AMESIM</p>
+                <p>CATIA R19</p>
+                <p>Visual Studio</p>
+                <p>MATLAB</p>
+                <p>QUARTUS</p>
+                <p>AMESIM</p>
+                <p>CATIA R19</p>
+                <p>Visual Studio</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 5 --------------------->
+    <!----------------------------------------------------->
+    <section class = "Contact_me"    id = "section5">
+   
+        <h2 class     = "Contact">Contact <span class = "Me">Me</span></h2>
+   
+
+        <video id  = "video5" autoplay loop muted>
+            <source src = "or.mp4" type = "video/mp4">
+        </video>
+
+        <div class = "card3"></div>
+        <div class = "container5">
+          
+            <form action="https://formsubmit.co/fabio.leboucher@ipsa.fr" method="POST">
+                <h5>Contact me</h5>
+                <input type="text"  id = "firstname" name = "firstname" placeholder = "First Name" required>
+                <input type="text"  id = "lastname"  name = "lastname"  placeholder = "Last Name"  required>
+                <input type="email" id = "email"     name = "email"     placeholder = "Email"      required>
+                <input type="text"  id = "mobile"    name = "mobile"    placeholder = "Mobile"     required>   
+                
+                <h44>Or write me manually an email at : fabio.leboucher@ipsa.fr</h44>
+                <h4>Type your message Here...</h4> 
+                <textarea name = "message" required></textarea>
+                <input type    = "hidden"  name  = "_next" value="http://127.0.0.1:5500/V4.html">
+                <input type    = "submit"  value = "Send" id = "button" />
+            </form>
+        </div>
+    </section>
+
+
+    <!----------------------------------------------------->
+    <!--------------------- SECTION 6 --------------------->
+    <!----------------------------------------------------->
+    <section class = "About_me"    id = "section6">
+   
+        <h2 class     = "About">About <span class = "Me2">Me</span></h2>
+        <img id = "image" src = "Fabio_Linkedin.jpg" alt = "My face">
+
+        <video id  = "video5" autoplay loop muted>
+            <source src = "space.mp4" type = "video/mp4">
+        </video>
+
+
+
+        <div class = "container6">
+            <video id  = "video6" autoplay loop muted>
+                <source src = "space.mp4" type = "video/mp4">
+            </video>
+
+            <form>
+                <h6>Fabio Leboucher</h6>
+                <h7>I am a student of 22 years old, I live near Paris in Gif-Sur-Yvette. I study aeronautical engineering and i specialize myself in embeded systems and I'm able to work as much on Softwares as Hardware.</h7>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
